@@ -8,5 +8,10 @@ namespace PierresBakery.Models
     {
       BreadCount = breadCount;
     }
+
+    public int Cost ()
+    {
+      return 1;
+    }
   }
 }
