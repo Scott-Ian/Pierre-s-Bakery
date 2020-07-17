@@ -11,7 +11,23 @@ namespace PierresBakery.Models
 
     public int Cost ()
     {
-      return BreadCount * 5;
+      int cost = 0;
+      int loaves = BreadCount;
+
+      while (loaves > 0)
+      {
+        if (loaves >= 3)
+        {
+          cost += 10;
+          loaves -= 3;
+        }
+        else 
+        {
+          loaves --;
+          cost += 5;
+        }
+      }
+      return cost;
     }
   }
 }
