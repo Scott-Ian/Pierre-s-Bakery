@@ -1,12 +1,11 @@
-# _Pierre's Bakery
+# _Pierre's Bakery_
 
 #### _This program takes in a bakery order of bread loaves and pastries, and returns a cost_
-
 #### By _**Ian Scott**_
 
 ## Description
 
-_Pierre's Bakery is a terminal run c# program that prompts a user for a bakery order (loaves of bread and pastries) and returns a total cost of the order. Cost of bread and pastries are reduced when purchasing multiples. For bread - buy 2 get 1 free. For pastries: buy 1 for $2, or 3 for $5._
+_Pierre's Bakery is a terminal run c# program that prompts a user for a bakery order (loaves of bread and pastries) and returns a total cost of the order. Cost of bread and pastries are reduced when purchasing multiples. For bread - buy 2 get 1 free. For pastries: buy 1 for $2, or 3 for $5. The program will attempt to up-sell a user if they attempt to purchase an even number of pastries._
 
 ### Specifications
 | | Behavior | Input | Output | isComplete |
@@ -22,8 +21,9 @@ _Pierre's Bakery is a terminal run c# program that prompts a user for a bakery o
 |9.|When the user runs the program there will be a welcome prompt and a description of the cost of bread and Pastries | _Program Start_ | Welcome to Pierre's Bakery! ... |_True_|
 |10.|The program will accept user input regarding how many loaves of bread and pastries the user will be purchasing and return total cost of the selection | 3;2 | $14 |_True_|
 |11.| The program will not accept non-number inputs, and will re-prompt the user if a non-number has been submitted | Hello! | Please only submit numbers | _True_|
+|12.| The program will attempt to up-sell the user if they attempt to purchase an even number of pastries | Pastries: 5 | Would you like 1 additional pastry for only $1? |_True_|
 
-|12.| The program will attempt to up-sell the user if they attempt to purchase an even number of pastries | Pastries: 5 | Would you like 1 additional pastry for only $1? |_False_|
+|13
 
 
 ## Setup/Installation Requirements
@@ -41,19 +41,18 @@ _Pierre's Bakery is a terminal run c# program that prompts a user for a bakery o
 
 ## Known Bugs
 
-_ _
+_There are currently no known bugs._
 
 ## Support and contact details
 
-_Contact me at...._
+_If you would like to discuss this project with the author, report bugs, or contribute, please contact the author via GitHub._
 
 ## Technologies Used
 
-- C#
-- .NET
+_This program utilizes Object Oriented Programming, .Net 3.1.5, recursive methods, and MSTest to ensure functionality._
 
 ### License
 
 _This software is licensed under the MIT license_
 
-Copyright (c) 2020 **Your Name**.
+Copyright (c) 2020 **Ian Scott**.

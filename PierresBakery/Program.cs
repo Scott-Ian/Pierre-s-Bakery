@@ -18,15 +18,36 @@ namespace PierresBakery
       int breadCost = breadOrder.Cost();
       Console.WriteLine("You have selected {0} loaves of bread for ${1}", breadOrder.BreadCount, breadCost);
 
-      Console.WriteLine("\nHow many pastries would you like to purchase?");
-      int pastryCount = GetOrder();
-      Pastries pastryOrder = new Pastries(pastryCount);
-      int pastryCost = pastryOrder.Cost();
-      Console.WriteLine("You have selected {0} pastries for ${1}", pastryOrder.PastryCount, pastryCost);
+      int pastryCost = PastryOrder();
 
       Console.WriteLine($"Your order total is ${breadCost + pastryCost}");
     }
 
+    private static int PastryOrder ()
+    {
+      Console.WriteLine("\nHow many pastries would you like to purchase?");
+      int pastryCount = GetOrder();
+
+      if (pastryCount % 2 == 0)
+      {
+        Console.WriteLine("Would you like an additional pastry for only $1?");
+        Console.WriteLine("Please submit 'Yes' or 'No'");
+        string upsellResponse = Console.ReadLine();
+
+        if(upsellResponse == "Y" || upsellResponse == "Yes" || upsellResponse == "y" || upsellResponse == "yes")
+        {
+          pastryCount++;
+          Console.WriteLine("Thank you for your patronage!");
+        }
+      }
+
+      Pastries pastryOrder = new Pastries(pastryCount);
+      int pastryCost = pastryOrder.Cost();
+      Console.WriteLine("You have selected {0} pastries for ${1}", pastryOrder.PastryCount, pastryCost);
+
+      return pastryCost;
+    }
+    
     private static int GetOrder () {
 
       string userInput = Console.ReadLine();
