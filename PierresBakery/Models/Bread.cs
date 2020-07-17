@@ -2,6 +2,11 @@ namespace PierresBakery.Models
 {
   public class Bread
   {
-    // properties, constructors, methods, etc. go here
+
+    public int BreadCount {get; set; }
+    public Bread (int breadCount)
+    {
+      BreadCount = breadCount;
+    }
   }
 }
