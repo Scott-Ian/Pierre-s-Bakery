@@ -13,19 +13,45 @@ namespace PierresBakery
       Console.WriteLine("Pastries are $2 each, or 3 for $5!");
 
       Console.WriteLine("How many loaves of Bread would you like to purchase?");
-      int loafCount = int.Parse(Console.ReadLine());
+      int loafCount = GetOrder();
       Bread breadOrder = new Bread(loafCount);
       int breadCost = breadOrder.Cost();
       Console.WriteLine("You have selected {0} loaves of bread for ${1}", breadOrder.BreadCount, breadCost);
 
-      Console.WriteLine("How many pastries would you like to purchase?");
-      int pastryCount = int.Parse(Console.ReadLine());
+      Console.WriteLine("\nHow many pastries would you like to purchase?");
+      int pastryCount = GetOrder();
       Pastries pastryOrder = new Pastries(pastryCount);
       int pastryCost = pastryOrder.Cost();
       Console.WriteLine("You have selected {0} pastries for ${1}", pastryOrder.PastryCount, pastryCost);
 
       Console.WriteLine($"Your order total is ${breadCost + pastryCost}");
+    }
 
+    private static int GetOrder () {
+
+      string userInput = Console.ReadLine();
+      int order;
+      bool canBeParsed = int.TryParse(userInput, out order);
+
+      if (canBeParsed)
+      {
+        if(order < 0)
+        {
+          Console.WriteLine("\nPlease submit a number 0 or greater:");
+          order = GetOrder();
+          return order;
+        }
+        else 
+        {
+          return order;
+        }
+      }
+      else
+      {
+        Console.WriteLine("\nNon-number characters are not permitted. Please resubmit:");
+        order = GetOrder();
+        return order;
+      }
     }
   }
 }

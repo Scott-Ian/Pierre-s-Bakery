@@ -21,8 +21,9 @@ _Pierre's Bakery is a terminal run c# program that prompts a user for a bakery o
 |8.|The program will incorporate bulk purchase discounts for pastries when calculating price: buy 1 for $2 or 3 for $5 | 3 | $5 |_True_|
 |9.|When the user runs the program there will be a welcome prompt and a description of the cost of bread and Pastries | _Program Start_ | Welcome to Pierre's Bakery! ... |_True_|
 |10.|The program will accept user input regarding how many loaves of bread and pastries the user will be purchasing and return total cost of the selection | 3;2 | $14 |_True_|
+|11.| The program will not accept non-number inputs, and will re-prompt the user if a non-number has been submitted | Hello! | Please only submit numbers | _True_|
 
-|11.| The program will not accept non-number inputs, and will re-prompt the user if a non-number has been submitted | Hello! | Please only submit numbers | _False_|
+|12.| The program will attempt to up-sell the user if they attempt to purchase an even number of pastries | Pastries: 5 | Would you like 1 additional pastry for only $1? |_False_|
 
 
 ## Setup/Installation Requirements
