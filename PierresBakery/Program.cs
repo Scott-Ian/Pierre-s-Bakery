@@ -8,7 +8,7 @@ namespace PierresBakery
     public static void Main()
     {
       Console.WriteLine("\nWelcome to Pierres Bakery!");
-      Console.WriteLine("-_-_-_-_-_-_");
+      Console.WriteLine("______________________________");
       Console.WriteLine("Bread is $5 per loaf, or buy 2 get 1 free!");
       Console.WriteLine("Pastries are $2 each, or 3 for $5!");
 
@@ -41,11 +41,13 @@ namespace PierresBakery
           loafCount++;
           Console.WriteLine("Thank you for your patronage!");
         }
+        
       }
 
       Bread breadOrder = new Bread(loafCount);
       int breadCost = breadOrder.Cost();
       Console.WriteLine("You have selected {0} loaves of bread for ${1}", breadOrder.BreadCount, breadCost);
+      Console.WriteLine("______________________________");
 
       return breadCost;
     }
@@ -72,6 +74,7 @@ namespace PierresBakery
       Pastries pastryOrder = new Pastries(pastryCount);
       int pastryCost = pastryOrder.Cost();
       Console.WriteLine("You have selected {0} pastries for ${1}", pastryOrder.PastryCount, pastryCost);
+      Console.WriteLine("______________________________");
 
       return pastryCost;
     }
