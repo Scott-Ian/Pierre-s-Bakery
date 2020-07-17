@@ -26,5 +26,12 @@ namespace PierresBakery.Tests
       Bread testBread = new Bread(1);
       Assert.AreEqual(5, testBread.Cost());
     }
+
+    [TestMethod]
+    public void Cost_ReturnsPriceOfOrderWithDiscount_Int()
+    {
+      Bread testBread = new Bread(6);
+      Assert.AreEqual(20, testBread.Cost());
+    }
   }
 }

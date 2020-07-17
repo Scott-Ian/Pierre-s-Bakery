@@ -10,7 +10,7 @@ namespace PierresBakery.Models
 
     public int Cost ()
     {
-      return 1;
+      return PastryCount * 2;
     }
   }
 }

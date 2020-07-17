@@ -23,7 +23,7 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void Cost_ReturnsPriceOfOrder_Int()
     {
-      Pastries testPastry = new Pastries(2);
+      Pastries testPastry = new Pastries(3);
       Assert.AreEqual(6, testPastry.Cost());
     }
 
