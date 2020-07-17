@@ -7,5 +7,10 @@ namespace PierresBakery.Models
     {
       PastryCount = pastryCount;
     }
+
+    public int Cost ()
+    {
+      return 1;
+    }
   }
 }
