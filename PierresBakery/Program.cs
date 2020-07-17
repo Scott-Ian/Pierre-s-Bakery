@@ -14,7 +14,14 @@ namespace PierresBakery
 
       int breadCost = HandleBreadOrder();
       int pastryCost = HandlePastryOrder();
+
+      if (breadCost == 0 && pastryCost == 0)
+      {
+        Console.WriteLine("I see that you are not interested in any of our fine baked goods. Good day!\n\nI said Good Day!!");
+      } else 
+      {
       Console.WriteLine($"\nYour order total is ${breadCost + pastryCost}");
+      }
     }
 
     // Prompts user for Bread order amount, returns bread order cost
@@ -49,7 +56,7 @@ namespace PierresBakery
       Console.WriteLine("\nHow many pastries would you like to purchase?");
       int pastryCount = GetOrder();
 
-      if (pastryCount % 2 == 0)
+      if (pastryCount % 2 == 0 && pastryCount > 0)
       {
         Console.WriteLine("Would you like an additional pastry for only $1?");
         Console.WriteLine("Please submit 'Yes' or 'No'");
