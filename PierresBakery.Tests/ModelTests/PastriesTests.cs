@@ -33,6 +33,5 @@ namespace PierresBakery.Tests
       Pastries testPastry = new Pastries(3);
       Assert.AreEqual(5, testPastry.Cost());
     }
-
   }
 }

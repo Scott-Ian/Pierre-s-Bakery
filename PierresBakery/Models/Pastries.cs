@@ -10,17 +10,19 @@ namespace PierresBakery.Models
 
     public int Cost ()
     {
-      int pastryCount = 0;
       int cost = 0;
+      int pastryCount = PastryCount;
 
-      while (pastryCount > 0)
+      if (pastryCount >= 3)
       {
-        if (pastryCount >= 3)
-        {
-          
-        }
+        int pastryTriples = pastryCount / 3;
+        cost += 5 * pastryTriples;
+        pastryCount -= (pastryTriples * 3);
       }
-      return PastryCount * 2;
+
+      cost += (2 * pastryCount);
+
+      return cost;
     }
   }
 }

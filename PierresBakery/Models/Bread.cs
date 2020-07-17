@@ -14,18 +14,15 @@ namespace PierresBakery.Models
       int cost = 0;
       int loaves = BreadCount;
 
-      while (loaves > 0)
+      if (loaves >= 3)
       {
-        if (loaves >= 3)
-        {
-          int loafTriples = loaves / 3;
-          cost += 10 * loafTriples;
-          loaves -= (loafTriples * 3);
-        }
-
-        cost += (5 * loaves);
-        loaves = 0;
+        int loafTriples = loaves / 3;
+        cost += 10 * loafTriples;
+        loaves -= (loafTriples * 3);
       }
+
+      cost += (5 * loaves);
+
       return cost;
     }
   }
