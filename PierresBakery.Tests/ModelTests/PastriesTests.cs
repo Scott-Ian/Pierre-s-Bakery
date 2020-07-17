@@ -23,8 +23,15 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void Cost_ReturnsPriceOfOrder_Int()
     {
+      Pastries testPastry = new Pastries(2);
+      Assert.AreEqual(4, testPastry.Cost());
+    }
+
+    [TestMethod]
+    public void Cost_ReturnsPriceOfOrderWithDiscount_Int()
+    {
       Pastries testPastry = new Pastries(3);
-      Assert.AreEqual(6, testPastry.Cost());
+      Assert.AreEqual(5, testPastry.Cost());
     }
 
   }
