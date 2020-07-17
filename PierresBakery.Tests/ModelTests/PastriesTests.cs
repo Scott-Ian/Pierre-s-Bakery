@@ -9,11 +9,11 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void PastriesConstructor_CreatesInstanceOfPastries_PastriesObject()
     {
-      Pastries testPastry = new Pastries();
+      Pastries testPastry = new Pastries(3);
       Assert.AreEqual(typeof(Pastries), testPastry.GetType());
     }
 
-     [TestMethod]
+    [TestMethod]
     public void PastriesConstructor_CreatesInstanceOfPastriesWithPastryCount_Int()
     {
       Pastries testPastry = new Pastries(3);
