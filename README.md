@@ -11,8 +11,9 @@ _Pierre's Bakery is a terminal run c# program that prompts a user for a bakery o
 ### Specifications
 | Spec | Input | Output | isComplete |
 | :-------------     | :------------- | :------------- |:------------- |
-|The program can create a custom class instance of Bread | N/A |N/A  | _False_ |
-|The program can create a custom class instance of Pastry | N/A | N/A | _False_ |
+|The program can create a custom class instance of Bread | N/A |N/A  | _True_ |
+|The program can create a custom class instance of Pastry | N/A | N/A | _True_ |
+
 |The program can take in an order number from the user when creating a Bread object | 2 | 2 Loaves |_False_ |
 |The program can take in an order number from the user when creating a Pastry object | 4 | 2 Pastries |_False_ |
 |The program will return a total cost of all loaves purchased | 2 | $10 |_False_|
