@@ -1,19 +1,27 @@
-# _PROJECT NAME_
+# _Pierre's Bakery
 
-#### _SHORT DESCRIPTION_
+#### _This program takes in a bakery order of bread loaves and pastries, and returns a cost_
 
-#### By _**YOUR NAME HERE**_
+#### By _**Ian Scott**_
 
 ## Description
 
-_Long description._
+_Pierre's Bakery is a terminal run c# program that prompts a user for a bakery order (loaves of bread and pastries) and returns a total cost of the order. Cost of bread and pastries are reduced when purchasing multiples. For bread - buy 2 get 1 free. For pastries: buy 1 for $2, or 3 for $5._
 
 ### Specifications
 | Spec | Input | Output | isComplete |
 | :-------------     | :------------- | :------------- |:------------- |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+|The program can create a custom class instance of Bread | N/A |N/A  | _False_ |
+|The program can create a custom class instance of Pastry | N/A | N/A | _False_ |
+|The program can take in an order number from the user when creating a Bread object | 2 | 2 Loaves |_False_ |
+|The program can take in an order number from the user when creating a Pastry object | 4 | 2 Pastries |_False_ |
+|The program will return a total cost of all loaves purchased | 2 | $10 |_False_|
+|The program will return a total cost of all pastries purchased | 2 | $6 |_False_|
+|The program will incorporate bulk purchase discounts for loaves when calculating price: buy 2 get one free | 3 | $10 |_False_|
+|The program will incorporate bulk purchase discounts for pastries when calculating price: but 1 for $2 or 3 for $5 | 3 | $5 |_False_|
+|When the user runs the program there will be a welcome prompt and a description of the cost of bread | _Program Start_ | Welcome to Pierre's Bakery! |_False_|
+
+|The program will accept user input regarding how many loaves of bread and pastries the user will be purchasing and return total cost of the selection | 5;5 |  |_False_|
 
 ## Setup/Installation Requirements
 
