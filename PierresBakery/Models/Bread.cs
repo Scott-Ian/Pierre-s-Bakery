@@ -18,14 +18,13 @@ namespace PierresBakery.Models
       {
         if (loaves >= 3)
         {
-          cost += 10;
-          loaves -= 3;
+          int loafTriples = loaves / 3;
+          cost += 10 * loafTriples;
+          loaves -= (loafTriples * 3);
         }
-        else 
-        {
-          loaves --;
-          cost += 5;
-        }
+
+        cost += (5 * loaves);
+        loaves = 0;
       }
       return cost;
     }

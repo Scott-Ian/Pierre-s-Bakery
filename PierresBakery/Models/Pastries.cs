@@ -10,6 +10,16 @@ namespace PierresBakery.Models
 
     public int Cost ()
     {
+      int pastryCount = 0;
+      int cost = 0;
+
+      while (pastryCount > 0)
+      {
+        if (pastryCount >= 3)
+        {
+          
+        }
+      }
       return PastryCount * 2;
     }
   }
