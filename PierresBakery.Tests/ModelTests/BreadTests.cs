@@ -6,6 +6,11 @@ namespace PierresBakery.Tests
   [TestClass]
   public class BreadTests
   {
-    // Test methods go here
+    [TestMethod]
+    public void BreadCOnstructor_CreatesInstanceOfBread_BreadObject()
+    {
+      Bread testBread = new Bread();
+      Assert.AreEqual(typeof(Bread), testBread.GetType());
+    }
   }
 }
