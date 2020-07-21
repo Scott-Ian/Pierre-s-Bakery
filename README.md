@@ -28,8 +28,8 @@ _Pierre's Bakery is a terminal run c# program that prompts a user for a bakery o
 ## Setup/Installation Requirements
 
 1. This program utilizes .NET version 3.1, and requires this framework to be pre-installed:
-    * Please go to https://dotnet.microsoft.com/download/dotnet-core/3.1 and install the SDK   version 3.1 or greater patch version, but do not upgrade to a higher minor version number.
-2. Clone this repository onto your computer: https://github.com/...
+    * Please go to https://dotnet.microsoft.com/download/dotnet-core/2.2 and install the SDK   version 2.2 or greater patch version, but do not upgrade to a higher minor version number.
+2. Clone this repository onto your computer: https://github.com/Scott-Ian/PierresBakery.Solution.git
 3. In your preferred terminal window, navigate into PROJECTNAME.SOLUTIONS/PROJECTNAME using cd (i.e. cd desktop/PROJECTNAME.SOLUTIONS/PROJECTNAME) and open the project with your preferred code editor.
 4. Run the following terminal command: $ dotnet restore
 5. To initiate this terminal program, run the command: $ dotnet run
@@ -48,7 +48,7 @@ _If you would like to discuss this project with the author, report bugs, or cont
 
 ## Technologies Used
 
-_This program utilizes Object Oriented Programming, .Net 3.1.5, recursive methods, and MSTest to ensure functionality._
+_This program utilizes Object Oriented Programming, .Net 2.2, recursive methods, and MSTest to ensure functionality._
 
 ### License
 
